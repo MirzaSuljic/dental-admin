@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f7fa; color: #1f2933; }
+h1 { margin: 0 0 16px; font-size: 24px; }
+.layout { display: flex; min-height: 100vh; }
+.sidebar { width: 210px; background: #12485f; color: #fff; padding: 20px 16px;
+  display: flex; flex-direction: column; gap: 16px; }
+.sidebar h2 { margin: 0; font-size: 20px; }
+.sidebar nav { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.sidebar nav a { color: #cfe3ec; text-decoration: none; padding: 9px 12px; border-radius: 6px; }
+.sidebar nav a.active, .sidebar nav a:hover { background: #1d6a89; color: #fff; }
+.content { flex: 1; padding: 28px; max-width: 1100px; }
+.page-head { display: flex; justify-content: space-between; align-items: center; }
+.card { background: #fff; border-radius: 10px; padding: 18px; margin-bottom: 18px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px; margin-bottom: 14px; }
+label { display: flex; flex-direction: column; gap: 4px; font-size: 14px; }
+input, select, textarea { padding: 8px 10px; border: 1px solid #c3ced8; border-radius: 6px;
+  font: inherit; }
+input[type="checkbox"] { width: 20px; height: 20px; }
+.btn, .btn-light, .btn-danger { padding: 8px 14px; border: 0; border-radius: 6px;
+  cursor: pointer; font: inherit; }
+.btn { background: #1d8fb8; color: #fff; }
+.btn-light { background: #e3ebf1; color: #12485f; }
+.btn-danger { background: #f8dede; color: #a12626; }
+.error { color: #a12626; margin: 8px 0; }
+.search { display: flex; gap: 8px; margin-bottom: 14px; }
+.search input { flex: 1; }
+table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px;
+  overflow: hidden; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08); }
+th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #e6edf2;
+  font-size: 14px; }
+th { background: #eef3f7; }
+.actions { white-space: nowrap; text-align: right; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 18px; }
+.stat { text-align: center; }
+.stat strong { display: block; font-size: 30px; color: #1d8fb8; }
+.login-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+.login { width: 340px; display: flex; flex-direction: column; gap: 12px; }
