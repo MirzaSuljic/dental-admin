@@ -1,6 +1,6 @@
 # Dental Admin
 
-**Live demo:** https://dental-admin.netlify.app
+**Live demo:** https://dental-clinic-admin-dashboard.netlify.app/
 
 An admin application for a dental clinic. Staff log in and manage patients, dentists, treatments (price list) and appointments. The app prevents double-booking: a dentist cannot have two overlapping appointments.
 
