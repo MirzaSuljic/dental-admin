@@ -13,7 +13,7 @@ public class WebConfig implements WebMvcConfigurer {
     private final AuthInterceptor auth;
 
     @Value("${app.client-url}")
-    private String clientUrl;
+    private String[] clientUrls;
 
     public WebConfig(AuthInterceptor auth) {
         this.auth = auth;
@@ -29,7 +29,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")
-                .allowedOrigins(clientUrl)
+                .allowedOrigins(clientUrls)
                 .allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")
                 .allowedHeaders("*");
     }
